@@ -23,10 +23,10 @@ public class InsertBusDetalisUserCase {
 		System.out.println("Enter the seats in bus -->");
 		int seats = sc.nextInt();
 		
-		System.out.println("Enter the departure time -->");
+		System.out.println("Enter the departure time (hh:mm:ss) -->");
 		String deptime = sc.next();
 		
-		System.out.println("Enter the arrival time -->");
+		System.out.println("Enter the arrival time (hh:mm:ss) -->");
 		String arrtime = sc.next();
 		
 		System.out.println("Enter the Starting Point -->");
@@ -40,7 +40,7 @@ public class InsertBusDetalisUserCase {
 		
 		BusDao bd = new BusDaoImpl();
 		
-		System.out.println(bd.insertBusDetails(bus)); bd.insertBusDetails(bus);
+		System.out.println(bd.insertBusDetails(bus));
 		
 		
 	}
