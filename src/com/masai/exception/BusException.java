@@ -1,6 +1,6 @@
 package com.masai.exception;
 
-public class BusException {
+public class BusException extends Exception{
 	
 	public BusException()
 	{
@@ -9,7 +9,7 @@ public class BusException {
 	
 	public BusException(String message)
 	{
-		super();
+		super(message);
 	}
 	
 	

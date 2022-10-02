@@ -21,7 +21,7 @@ public class registerCustomerUserCase {
 		System.out.println("Enter your age -->");
 		int age = sc.nextInt();
 		
-		System.out.println("Enter your gender -->");
+		System.out.println("Enter your gender (male/female) -->");
 		String gender = sc.next();
 		
 		System.out.println("Enter Your password -->");
