@@ -41,7 +41,11 @@ public class CustomerDaoImpl implements CustomerDao {
 		}
 		catch(SQLException se)
 		{
+<<<<<<< HEAD
 			System.out.println("\n"+se.getMessage());
+=======
+			System.out.println(se.getMessage());
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		}
 		return message;
 		
@@ -74,7 +78,11 @@ public class CustomerDaoImpl implements CustomerDao {
 			}
 			else
 			{
+<<<<<<< HEAD
 				throw new CustomerException("**************Customer Doesn't exist......First register yourself*************");
+=======
+				throw new CustomerException("Customer Doesn't exist......First register yourself");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 			}
 			
 			
@@ -117,25 +125,41 @@ String message = "************Not Deleted***********";
 		    		
 		    		if(x>0)
 		    		{
+<<<<<<< HEAD
 		    			message = "\n************************"+x +" TICKET HAS BEEN CANCELLED***********************" ;
 		    		}
 		    		else
 		    		{
 		    			throw new CustomerException("\n**************Technical Error*************");
+=======
+		    			message = x +" ticket has been cancelled" ;
+		    		}
+		    		else
+		    		{
+		    			throw new CustomerException("technical error");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		    		}
 		    		
 		    	
 		    	}
 		    	else
 		    	{
+<<<<<<< HEAD
 		    		throw new BusException("\n*********Invalid Bus**********");
+=======
+		    		throw new BusException("*********Invalid Bus**********");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		    	}
 		    	
 		    	
 		    }
 		    else
 		    {
+<<<<<<< HEAD
 		    	throw new CustomerException("\n************Invalid Username***********");
+=======
+		    	throw new CustomerException("************Invalid Username***********");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		    }
 			
 		

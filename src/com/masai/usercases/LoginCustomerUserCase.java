@@ -10,9 +10,13 @@ import com.masai.exception.CustomerException;
 public class LoginCustomerUserCase {
 	
 	
+<<<<<<< HEAD
 	public static boolean main(String[] args) {
 		
 		boolean b = false;
+=======
+	public static void main(String[] args) {
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		
 		
 		Scanner sc = new Scanner(System.in);
@@ -32,14 +36,20 @@ public class LoginCustomerUserCase {
 			 
 			System.out.println("************** Welcome to the portal : "+customer.getName() + " *******************");
 			
+<<<<<<< HEAD
 			b = true;
+=======
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 			
 		} catch (CustomerException e) {
 			// TODO Auto-generated catch block
 			System.out.println(e.getMessage());
 		}
+<<<<<<< HEAD
 	    
 	    return b;
+=======
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		
 	}
 

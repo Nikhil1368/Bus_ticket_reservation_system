@@ -40,7 +40,11 @@ public class AdminDaoImpl implements AdminDao  {
 			}
 			else
 			{
+<<<<<<< HEAD
 				throw new AdminException("\n**************Not the Admin...Please fill right credentials*************");
+=======
+				throw new AdminException("Not the Admin...Please fill right credentials");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 			}
 			
 			
@@ -82,7 +86,11 @@ public class AdminDaoImpl implements AdminDao  {
 			
 			if(list.isEmpty())
 			{
+<<<<<<< HEAD
 				throw new BusException("\n***************NO TICKETS BOOKED BY THE CUSTOMER************************");
+=======
+				throw new BusException("No tickets Booked by the Customer");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 			}
 			
 			
@@ -126,25 +134,41 @@ public class AdminDaoImpl implements AdminDao  {
 		    		
 		    		if(x>0)
 		    		{
+<<<<<<< HEAD
 		    			message = "\n*********************TICKET HAS BEEN CONFIRMED FOR : "+username+" ***************************************";
 		    		}
 		    		else
 		    		{
 		    			throw new AdminException("\n*********Technical Error**************");
+=======
+		    			message = "Ticket has been confirmed for : "+username;
+		    		}
+		    		else
+		    		{
+		    			throw new AdminException("*********Technical Error**************");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		    		}
 		    		
 		    		
 		    	}
 		    	else
 		    	{
+<<<<<<< HEAD
 		    		throw new BusException("\n*************INVALID BUS******************");
+=======
+		    		throw new BusException("Invalid Bus");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		    	}
 		    	
 		    	
 		    }
 		    else
 		    {
+<<<<<<< HEAD
 		    	throw new CustomerException("\n*********INVALID USERNAME**************");
+=======
+		    	throw new CustomerException("Invalid Username");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		    }
 			
 		} catch (SQLException e) {

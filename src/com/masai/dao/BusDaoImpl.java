@@ -47,7 +47,11 @@ public class BusDaoImpl implements BusDao {
 			
 			
 		} catch (SQLException e) {
+<<<<<<< HEAD
 			System.out.println("\n"+e.getMessage());
+=======
+			System.out.println(e.getMessage());
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		}
 		
 		return message;
@@ -136,7 +140,11 @@ public class BusDaoImpl implements BusDao {
 		    		}
 		    		else
 		    		{
+<<<<<<< HEAD
 		    			throw new CustomerException("**********Technical Error***********");
+=======
+		    			throw new CustomerException("**********technical error***********");
+>>>>>>> 036c0ec98ad99666f4aae4a06760c459913c4ca1
 		    		}
 		    		
 		    	
